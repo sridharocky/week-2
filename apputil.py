@@ -56,13 +56,11 @@ print(ways(100,[25,10,5,1]))
 ################Numpy Lowest_score Exercise 1
 
 import numpy as np #importing numpy lib
-
 names = np.array(['Hannah','Astrid','Abdul','Mauve','Jung']) # array list of names
 scores = np.array([99,71,85,62,91]) #array list of numbers and stored in scores variable
-
 def lowest_score(names,scores): #defining a function 
     print((names[scores.argmin()]) + " has the lowest score")#returns the index which has smallest value in a array list
-    print((names[scores.argmax()])+ " has the highest score")#returns the index which has highest score
+    print((names[scores.argmax()]) + " has the highest score")#returns the index which has highest score
 
 lowest_score(names, scores)
 
@@ -71,14 +69,11 @@ lowest_score(names, scores)
 ################Numpy sort names Exercise 2
 
 import numpy as np  # importing numpy
-
 names = np.array(['Hannah','Astrid','Abdul','Mauve','Jung'])  #creating array list string data and storing in names
 scores = np.array([99,71,85,62,91])                     # creating  array list integers and storing in scores
-
 def sort_names(names,scores):   #defining a function with parameters 
     # using argsort() function from numpy library that sorts based on indices from lowest to highest 
     # thats why i used [::-1], which sorts from highest to lowest
     print(names[scores.argsort()[::-1]])  
-
 
 sort_names(names, scores)  #calling function
