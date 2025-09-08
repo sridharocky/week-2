@@ -57,11 +57,12 @@ print(ways(100,[25,10,5,1]))
 
 
 import numpy as np #importing numpy lib
-names = np.array(['Hannah','Astrid','Abdul','Mauve','Jung']) # array list of names
-scores = np.array([99,71,85,62,91]) #array list of numbers and stored in scores variable
+names = ['Hannah','Astrid','Abdul','Mauve','Jung'] # array list of names
+scores = [99,71,85,62,91] #array list of numbers and stored in scores variable
 def lowest_score(names,scores): #defining a function 
-    print(str(names[scores.argmin()]) + " has the lowest score")
-    print(str(names[scores.argmax()]) + " has the highest score")
+    #print(str(names[scores.argmin()]) + " has the lowest score")
+    print(str(names[scores.index(min(scores))]))
+    #print(str(names[scores.argmax()]) + " has the highest score")
 
 lowest_score(names, scores)
 
