@@ -1,7 +1,6 @@
 ################Ways Exercise 1
-def ways():
-    n = input("Enter the cents you want to calculate")#user will enter an amount in cents and stores in variable n
-    n = int(n)#converts user input to integer
+def ways(n):
+
     count = 0 #count variable has 0 stored
     for y in range((n // 5)+1): #loops form 0 to n//5(division), this tells how many cents we can use.
         x = n - 5 * y #calculates how many cents left
@@ -11,8 +10,11 @@ def ways():
     return
         
 
-while True: 
-    ways()
+
+ways(12)
+ways(20)
+ways(3)
+ways(1)
 
 ##################################################
 ##################################################
